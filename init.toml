@@ -1,21 +1,21 @@
 # All SpaceVim option below [option] section
 [options]
-bootstrap_before = "myspacevim#before"
-bootstrap_after = "myspacevim#after"
+# bootstrap_before = "myspacevim#before"
+# bootstrap_after = "myspacevim#after"
 
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer
 # Detect colorscheme used by dynamic-colors and fallback to NeoSolarized
-colorscheme = ""
-colorscheme_default = "NeoSolarized"
+colorscheme = "molokai"
+# colorscheme_default = "NeoSolarized"
 background = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors
 enable_guicolors = true
 
-# guifont = "SauceCodePro NF:h13"
-guifont = "DejaVuSansMono_Nerd_Font:h14:cANSI:qDRAFT"
+guifont = "SauceCodePro NF:h13"
+# guifont = "DejaVuSansMono_Nerd_Font:h14:cANSI:qDRAFT"
 
 # Disable statusline separator, if you want to use other value, please
 # install nerd fonts
@@ -64,7 +64,7 @@ src_root = '~/workspace/'
 # 0: disable autochdir
 # 1: change to project root automatically
 # 2: change to directory of current file automatically
-project_rooter_automatically = 1
+project_rooter_automatically = 2
 
 # default layers
 [[layers]]
@@ -80,8 +80,8 @@ name = 'shell'
 default_position = 'bottom'
 default_height = 30
 
-[[layers]]
-name = 'sudo'
+# [[layers]]
+# name = 'sudo'
 
 # additional layers
 [[layers]]
@@ -109,35 +109,11 @@ name = 'lang#asciidoc'
 enable = true
 
 [[layers]]
-name = 'lang#c'
-enable = true
-
-[[layers]]
-name = 'lang#clojure'
-enable = true
-
-[[layers]]
-name = 'lang#go'
-enable = true
-
-[[layers]]
-name = 'lang#haskell'
-enable = true
-
-[[layers]]
-name = 'lang#java'
-enable = true
-
-[[layers]]
 name = 'lang#javascript'
 enable = true
 
 [[layers]]
 name = 'lang#markdown'
-enable = true
-
-[[layers]]
-name = 'lang#python'
 enable = true
 
 [[layers]]
@@ -153,85 +129,69 @@ name = 'lang#xml'
 enable = true
 
 [[layers]]
-name = 'lsp'
-enable = true
-
-[[layers]]
 name = 'tags'
 enable = true
 
-[[layers]]
-name = 'tmux'
-enable = true
-
-[[layers]]
-name = 'lang#lilypond'
-enable = true
 
 # end optional layers
 
-[[custom_plugins]]
-# 彩色显示#RRGGBB
-name = 'lilydjwg/colorizer'
-merged = 0
+# [[custom_plugins]]
+# # 彩色显示#RRGGBB
+# name = 'lilydjwg/colorizer'
+# merged = 0
 
-[[custom_plugins]]
-name ='thawk/vim-asciidoc-folding'
-lazy = 1
-on_ft = 'asciidoc'
+# [[custom_plugins]]
+# name ='thawk/vim-asciidoc-folding'
+# lazy = 1
+# on_ft = 'asciidoc'
 
-[[custom_plugins]]
-name ='masukomi/vim-markdown-folding'
-lazy = 1
-on_ft = 'markdown'
+# [[custom_plugins]]
+# name ='masukomi/vim-markdown-folding'
+# lazy = 1
+# on_ft = 'markdown'
 
 # [[custom_plugins]]
 # name ='hspec/hspec.vim'
 # lazy = 1
 # on_ft = 'haskell'
 
-[[custom_plugins]]
-name ='thawk/vim-b2'
-lazy = 0
+# [[custom_plugins]]
+# name ='thawk/vim-b2'
+# lazy = 0
 
-[[custom_plugins]]
-name = 'ConradIrwin/vim-bracketed-paste'
+# [[custom_plugins]]
+# name = 'ConradIrwin/vim-bracketed-paste'
 
-[[custom_plugins]]
-name = 'derekwyatt/vim-fswitch'
-lazy = 1
-on_func = ['FSwitch']
-on_cmd = ['FSHere','FSRight','FSSplitRight','FSLeft','FSSplitLeft','FSAbove','FSSplitAbove','FSBelow','FSSplitBelow']
+# [[custom_plugins]]
+# name = 'derekwyatt/vim-fswitch'
+# lazy = 1
+# on_func = ['FSwitch']
+# on_cmd = ['FSHere','FSRight','FSSplitRight','FSLeft','FSSplitLeft','FSAbove','FSSplitAbove','FSBelow','FSSplitBelow']
 
-[[custom_plugins]]
-name = 'junkblocker/patchreview-vim'
-lazy = 1
-on_cmd = ['PatchReview','PatchReviewPersist','ReversePatchReview','ReversePatchReviewPersist','DiffReview','DiffReviewPersist']
+# [[custom_plugins]]
+# name = 'junkblocker/patchreview-vim'
+# lazy = 1
+# on_cmd = ['PatchReview','PatchReviewPersist','ReversePatchReview','ReversePatchReviewPersist','DiffReview','DiffReviewPersist']
 
-[[custom_plugins]]
-name = 'vim-scripts/CodeReviewer.vim'
-lazy = 1
-on_cmd = ['CheckReview','SortReviewFile']
-  [custom_plugins.on_map]
-  n = '<Plug>AddComment'
+# [[custom_plugins]]
+# name = 'vim-scripts/CodeReviewer.vim'
+# lazy = 1
+# on_cmd = ['CheckReview','SortReviewFile']
+#   [custom_plugins.on_map]
+#   n = '<Plug>AddComment'
 
-[[custom_plugins]]
-name = 'haya14busa/dein-command.vim'
-lazy = 1
-on_cmd = ['Dein']
+# [[custom_plugins]]
+# name = 'haya14busa/dein-command.vim'
+# lazy = 1
+# on_cmd = ['Dein']
 
-[[custom_plugins]]
-name = 'vernonrj/Mark--Karkat'
-lazy = 1
-on_cmd = ['Mark', 'MarkClear', 'Marks', 'MarkLoad', 'MarkSave', 'MarkPalette']
-on_map = ['<Plug>Mark']
+# [[custom_plugins]]
+# name = 'vernonrj/Mark--Karkat'
+# lazy = 1
+# on_cmd = ['Mark', 'MarkClear', 'Marks', 'MarkLoad', 'MarkSave', 'MarkPalette']
+# on_map = ['<Plug>Mark']
 
-[[custom_plugins]]
-name = 'sickill/vim-monokai'
+# [[custom_plugins]]
+# name = 'sickill/vim-monokai'
 
-# The following plugins is for my personal file formats
-[[custom_plugins]]
-name = 'thawk/vim-pcet'
-lazy = 1
-on_path = 'pcet_.*\.xml'
 
