@@ -7,7 +7,7 @@
 # if you want to use more colorscheme, please load the colorscheme
 # layer
 # Detect colorscheme used by dynamic-colors and fallback to NeoSolarized
-colorscheme = "molokai"
+colorscheme = "SpaceVim"
 # colorscheme_default = "NeoSolarized"
 background = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
@@ -135,63 +135,47 @@ enable = true
 
 # end optional layers
 
-# [[custom_plugins]]
-# # 彩色显示#RRGGBB
-# name = 'lilydjwg/colorizer'
-# merged = 0
+[[custom_plugins]]
+# 彩色显示#RRGGBB
+name = 'lilydjwg/colorizer'
+merged = 0
 
-# [[custom_plugins]]
-# name ='thawk/vim-asciidoc-folding'
-# lazy = 1
-# on_ft = 'asciidoc'
+[[custom_plugins]]
+name ='thawk/vim-asciidoc-folding'
+lazy = 1
+on_ft = 'asciidoc'
 
-# [[custom_plugins]]
-# name ='masukomi/vim-markdown-folding'
-# lazy = 1
-# on_ft = 'markdown'
+[[custom_plugins]]
+name ='masukomi/vim-markdown-folding'
+lazy = 1
+on_ft = 'markdown'
 
-# [[custom_plugins]]
-# name ='hspec/hspec.vim'
-# lazy = 1
-# on_ft = 'haskell'
+[[custom_plugins]]
+name ='thawk/vim-b2'
+lazy = 0
 
-# [[custom_plugins]]
-# name ='thawk/vim-b2'
-# lazy = 0
+[[custom_plugins]]
+name = 'ConradIrwin/vim-bracketed-paste'
 
-# [[custom_plugins]]
-# name = 'ConradIrwin/vim-bracketed-paste'
+[[custom_plugins]]
+name = 'derekwyatt/vim-fswitch'
+lazy = 1
+on_func = ['FSwitch']
+on_cmd = ['FSHere','FSRight','FSSplitRight','FSLeft','FSSplitLeft','FSAbove','FSSplitAbove','FSBelow','FSSplitBelow']
 
-# [[custom_plugins]]
-# name = 'derekwyatt/vim-fswitch'
-# lazy = 1
-# on_func = ['FSwitch']
-# on_cmd = ['FSHere','FSRight','FSSplitRight','FSLeft','FSSplitLeft','FSAbove','FSSplitAbove','FSBelow','FSSplitBelow']
 
-# [[custom_plugins]]
-# name = 'junkblocker/patchreview-vim'
-# lazy = 1
-# on_cmd = ['PatchReview','PatchReviewPersist','ReversePatchReview','ReversePatchReviewPersist','DiffReview','DiffReviewPersist']
+[[custom_plugins]]
+name = 'haya14busa/dein-command.vim'
+lazy = 1
+on_cmd = ['Dein']
 
-# [[custom_plugins]]
-# name = 'vim-scripts/CodeReviewer.vim'
-# lazy = 1
-# on_cmd = ['CheckReview','SortReviewFile']
-#   [custom_plugins.on_map]
-#   n = '<Plug>AddComment'
+[[custom_plugins]]
+name = 'vernonrj/Mark--Karkat'
+lazy = 1
+on_cmd = ['Mark', 'MarkClear', 'Marks', 'MarkLoad', 'MarkSave', 'MarkPalette']
+on_map = ['<Plug>Mark']
 
-# [[custom_plugins]]
-# name = 'haya14busa/dein-command.vim'
-# lazy = 1
-# on_cmd = ['Dein']
-
-# [[custom_plugins]]
-# name = 'vernonrj/Mark--Karkat'
-# lazy = 1
-# on_cmd = ['Mark', 'MarkClear', 'Marks', 'MarkLoad', 'MarkSave', 'MarkPalette']
-# on_map = ['<Plug>Mark']
-
-# [[custom_plugins]]
-# name = 'sickill/vim-monokai'
+[[custom_plugins]]
+name = 'sickill/vim-monokai'
 
 
